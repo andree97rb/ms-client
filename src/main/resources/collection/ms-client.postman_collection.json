@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "dbd6392b-59c3-4d08-ad77-8166783faee7",
+		"name": "ms-client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17206006"
+	},
+	"item": [
+		{
+			"name": "getClientById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"name\": \"Andree\",\r\n        \"age\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ms-client/clients/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms-client",
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ms-client/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms-client",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Fátima\",\r\n    \"age\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ms-client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ms-client"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
